@@ -6,7 +6,7 @@ from tensorflow.keras.models import Model
 from PIL import Image
 from config import IMAGE_SIZE
 
-def buiild_feature_extractor():
+def build_feature_extractor():
     """Builds the InceptionV3 model for feature extraction"""
 
     inception = InceptionV3(weights="imagenet", include_top=False, pooling="avg")
@@ -41,5 +41,5 @@ def extract_features(image_paths, model):
 
         if i % 100 == 0:
             print(f"Extracted features from {i}/{len(image_paths)} images")
-            
+
     return features

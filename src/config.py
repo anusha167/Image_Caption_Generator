@@ -13,5 +13,5 @@ VOCAB_SIZE = 5000
 MAX_LENGTH = 50
 
 BATCH_SIZE = 64
-EPOCHS = 20 # Epoch is the number of times the entire training dataset is passed through the model
+EPOCHS = 5 # Epoch is the number of times the entire training dataset is passed through the model
 LEARNING_RATE = 0.001
